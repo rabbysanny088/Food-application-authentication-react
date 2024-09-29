@@ -1,0 +1,36 @@
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; // full screen height
+
+  .loader {
+    color: #36d7b7; // loader color
+  }
+
+  .animation-text {
+    font-size: 2em;
+    display: inline-block;
+    color: #36d7b7;
+  }
+
+  .button-container {
+    margin-top: 16px;
+
+    button {
+      padding: 12px;
+      background-color: #38a169; // Tailwind green-500
+      color: #fff;
+      font-size: 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 0;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #2f855a; // Tailwind green-600
+      }
+    }
+  }
+}
