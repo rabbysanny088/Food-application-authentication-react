@@ -1,0 +1,210 @@
+.containerTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.containerTwo .container {
+  max-width: 350px;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+  border-radius: 40px;
+  padding: 25px 35px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: rgba(133, 189, 215, 0.878) 0px 30px 30px -20px;
+  margin: 20px;
+}
+.containerTwo .container input {
+  margin-top: 1rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 5px;
+  padding: 6px;
+}
+.containerTwo .container input::file-selector-button {
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5em;
+  border: thin solid rgb(221, 221, 221);
+  border-radius: 3px;
+}
+.containerTwo .container input[type=file]::file-selector-button {
+  border: 1px solid #eee;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: green;
+  transition: 1s;
+}
+.containerTwo .container .text {
+  margin-top: 10px;
+  color: #000;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+.containerTwo .container .text:hover {
+  color: red;
+}
+.containerTwo .container .heading {
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(16, 137, 211);
+}
+.containerTwo .container .form {
+  margin-top: 20px;
+}
+.containerTwo .container .form .eye-content {
+  position: relative;
+}
+.containerTwo .container .form .eye-content .io-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-25%);
+  cursor: pointer;
+  font-size: 20px;
+}
+.containerTwo .container .form .eye-content .input {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+}
+.containerTwo .container .form .eye-content .input::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+.containerTwo .container .form .eye-content .input::placeholder {
+  color: rgb(170, 170, 170);
+}
+.containerTwo .container .form .eye-content .input:focus {
+  outline: none;
+  border-inline: 2px solid #12b1d1;
+}
+.containerTwo .container .form .forgot-password {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.containerTwo .container .form .forgot-password a {
+  font-size: 11px;
+  color: #0099ff;
+  text-decoration: none;
+}
+.containerTwo .container .form .login-button {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+  cursor: pointer;
+  color: white;
+  padding-block: 15px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: rgba(133, 189, 215, 0.878) 0px 20px 10px -15px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.containerTwo .container .form .login-button:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(133, 189, 215, 0.878) 0px 23px 10px -20px;
+}
+.containerTwo .container .form .login-button:active {
+  transform: scale(0.95);
+  box-shadow: rgba(133, 189, 215, 0.878) 0px 15px 10px -10px;
+}
+.containerTwo .container .form .login-button .loading {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.containerTwo .container .social-account-container {
+  margin-top: 25px;
+}
+.containerTwo .container .social-account-container .title {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(170, 170, 170);
+}
+.containerTwo .container .social-account-container .login {
+  color: blue;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.containerTwo .container .social-account-container .or-text {
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: #666;
+  position: relative;
+  margin-top: 14px;
+}
+.containerTwo .container .social-account-container .or-text::before, .containerTwo .container .social-account-container .or-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 89px;
+  height: 1px;
+  background-color: #ccc;
+}
+.containerTwo .container .social-account-container .or-text::before {
+  left: -95px;
+}
+.containerTwo .container .social-account-container .or-text::after {
+  right: -97px;
+}
+.containerTwo .container .social-account-container .social-accounts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+.containerTwo .container .social-account-container .social-accounts .btn {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+.containerTwo .container .social-account-container .social-accounts .btn:hover {
+  border: 1px solid #333;
+}
+.containerTwo .container .agreement {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+.containerTwo .container .agreement a {
+  text-decoration: none;
+  color: #0099ff;
+  font-size: 9px;
+}
+
+.error-message {
+  position: relative;
+  opacity: 0;
+  animation: slideDown 0.5s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=register.css.map */
